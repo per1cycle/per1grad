@@ -17,6 +17,3 @@ class Ops(Enum):
     MUL = auto()
     MOD = auto()
 
-class Device():
-    pass 
-
