@@ -1,7 +1,7 @@
 from per1grad import helper
 from per1grad.tensor import Tensor
 
-class Per1Net(Tensor):
+class Per1Net():
     def __init__(self):
         super.__init__()
     
