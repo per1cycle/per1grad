@@ -3,8 +3,8 @@ from enum import Enum, auto
 class Ops(Enum):
     # unary ops
     NOOP = auto()
-    EXP2 = auto()
-    LOG2 = auto()
+    EXP = auto()
+    LOG = auto()
     CAST = auto()
     SIN = auto()
     SQRT = auto()
@@ -14,6 +14,8 @@ class Ops(Enum):
     ADD = auto()
     SUB = auto()
     DIV = auto()
-    MUL = auto()
+    LMUL = auto()
+    RMUL = auto()
     MOD = auto()
+    MAX = auto()
 
