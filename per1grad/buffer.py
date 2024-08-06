@@ -4,8 +4,13 @@ import numpy as np
 from per1grad.ops import Ops
 
 class Buffer:
-    def __init__(self, x: np.ndarray) -> None:
-        self._np = x
+    def __init__(self, x) -> None:
+        if isinstance(x, np.ndarray):
+            self._np = x
+        elif isinstance(x, list):
+            array = [d._np if isinstance(d, Buffer) else d for d in x]
+            self._np = np.stack(array, axis=0)
+            
     def __repr__(self) -> str:
         return f"per1grad buffer:\n {self._np}"
     def base(self): 

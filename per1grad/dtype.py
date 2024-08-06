@@ -47,7 +47,7 @@ class dtypes:
     @staticmethod
     def from_np(x: np.dtype)-> DType:
         return DTYPE_DICT[np.dtype(x).name]
-    bool: Final[DType] = DType(0, 1, "bool8", np.bool8)
+    bool: Final[DType] = DType(0, 1, "bool", np.bool8)
     int8: Final[DType] = DType(1, 1, "int8", np.int8)
     uint8: Final[DType] = DType(2, 1, "uint8", np.uint8)
 

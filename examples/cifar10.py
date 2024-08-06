@@ -1,6 +1,6 @@
 from per1grad import helper
 from per1grad.tensor import Tensor
-
+from per1grad.nn.module import Module, Conv2d
 class Per1Net():
     def __init__(self):
         super.__init__()
@@ -15,3 +15,4 @@ def train(x_train, y_train, net: Tensor)->None:
 if __name__ == "__main__":
     x_train, y_train, x_test, y_test = helper.load_cifar()
     model = Per1Net()
+    
