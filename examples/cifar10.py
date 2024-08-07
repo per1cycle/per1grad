@@ -1,14 +1,14 @@
 from per1grad import helper
 from per1grad.tensor import Tensor
-from per1grad.nn.module import Module, Conv2d
-class Per1Net():
+import per1grad.nn as nn 
+
+class Per1Net:
     def __init__(self):
-        super.__init__()
-    
+        self.l1 = Tensor()
     def forward(self, x):
         pass 
 
-def train(x_train, y_train, net: Tensor)->None:
+def train(x_train, y_train, )->None:
     pass 
 
 

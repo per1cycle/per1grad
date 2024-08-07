@@ -4,7 +4,7 @@ import numpy as np
 from per1grad.ops import Ops
 
 class Buffer:
-    def __init__(self, x) -> None:
+    def __init__(self, x, require_grad: bool = False) -> None:
         if isinstance(x, np.ndarray):
             self._np = x
         elif isinstance(x, list):
@@ -49,6 +49,5 @@ class Buffer:
         elif op == Ops.MAX:
             return Buffer(np.maximum(self._np, src[0].base()._np))
         
-        
-        
+        # todo
         
