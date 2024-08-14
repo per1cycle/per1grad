@@ -6,9 +6,11 @@ class Per1Net:
     def __init__(self):
         self.l1 = Tensor()
     def forward(self, x):
-        pass 
+        x = self.l1(x)
+        return self.l2(x)
+    
 
-def train(x_train, y_train, )->None:
+def train(x_train, y_train, net: Per1Net)->None:
     pass 
 
 
