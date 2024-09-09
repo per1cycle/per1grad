@@ -41,5 +41,3 @@ class Tensor:
     
     def pow(self, powval):
         pass 
-
-    
